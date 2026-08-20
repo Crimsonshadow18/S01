@@ -81,22 +81,22 @@ body {
   height: 70vmin;
   animation-delay: 0.3s;
 }
-.flower--1 .flower_line_leaf--1 {
+.flower--1 .flower__line__leaf--1 {
   animation: blooming-leaf-right var(--fl-speed) 1.6s backwards;
 }
-.flower--1 .flower_line_leaf--2 {
+.flower--1 .flower__line__leaf--2 {
   animation: blooming-leaf-right var(--fl-speed) 1.4s backwards;
 }
-.flower--1 .flower_line_leaf--3 {
+.flower--1 .flower__line__leaf--3 {
   animation: blooming-leaf-left var(--fl-speed) 1.2s backwards;
 }
-.flower--1 .flower_line_leaf--4 {
+.flower--1 .flower__line__leaf--4 {
   animation: blooming-leaf-left var(--fl-speed) 1s backwards;
 }
-.flower--1 .flower_line_leaf--5 {
+.flower--1 .flower__line__leaf--5 {
   animation: blooming-leaf-right var(--fl-speed) 1.8s backwards;
 }
-.flower--1 .flower_line_leaf--6 {
+.flower--1 .flower__line__leaf--6 {
   animation: blooming-leaf-left var(--fl-speed) 2s backwards;
 }
 .flower--2 {
@@ -108,16 +108,16 @@ body {
   height: 60vmin;
   animation-delay: 0.8s;
 }
-.flower--2 .flower_line_leaf--1 {
+.flower--2 .flower__line__leaf--1 {
   animation: blooming-leaf-right var(--fl-speed) 1.9s backwards;
 }
-.flower--2 .flower_line_leaf--2 {
+.flower--2 .flower__line__leaf--2 {
   animation: blooming-leaf-right var(--fl-speed) 1.7s backwards;
 }
-.flower--2 .flower_line_leaf--3 {
+.flower--2 .flower__line__leaf--3 {
   animation: blooming-leaf-left var(--fl-speed) 1.5s backwards;
 }
-.flower--2 .flower_line_leaf--4 {
+.flower--2 .flower__line__leaf--4 {
   animation: blooming-leaf-left var(--fl-speed) 1.3s backwards;
 }
 .flower--3 {
@@ -128,16 +128,16 @@ body {
 .flower--3 .flower__line {
   animation-delay: 0.9s;
 }
-.flower--3 .flower_line_leaf--1 {
+.flower--3 .flower__line__leaf--1 {
   animation: blooming-leaf-right var(--fl-speed) 2.5s backwards;
 }
-.flower--3 .flower_line_leaf--2 {
+.flower--3 .flower__line__leaf--2 {
   animation: blooming-leaf-right var(--fl-speed) 2.3s backwards;
 }
-.flower--3 .flower_line_leaf--3 {
+.flower--3 .flower__line__leaf--3 {
   animation: blooming-leaf-left var(--fl-speed) 2.1s backwards;
 }
-.flower--3 .flower_line_leaf--4 {
+.flower--3 .flower__line__leaf--4 {
   animation: blooming-leaf-left var(--fl-speed) 1.9s backwards;
 }
 .flower__leafs {
@@ -292,7 +292,7 @@ body {
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
   animation: grow-flower-tree 4s backwards;
 }
-.flower_line_leaf {
+.flower__line__leaf {
   --w: 7vmin;
   --h: calc(var(--w) + 2vmin);
   position: absolute;
@@ -308,16 +308,16 @@ body {
     #66bb6a
 );
 }
-.flower_line_leaf--1 {
+.flower__line__leaf--1 {
   transform: rotate(70deg) rotateY(30deg);
 }
-.flower_line_leaf--2 {
+.flower__line__leaf--2 {
   top: 45%;
   transform: rotate(70deg) rotateY(30deg);
 }
-.flower_line_leaf--3,
-.flower_line_leaf--4,
-.flower_line_leaf--6 {
+.flower__line__leaf--3,
+.flower__line__leaf--4,
+.flower__line__leaf--6 {
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
   border-top-left-radius: var(--h);
@@ -326,15 +326,15 @@ body {
   top: 12%;
   transform: rotate(-70deg) rotateY(30deg);
 }
-.flower_line_leaf--4 {
+.flower__line__leaf--4 {
   top: 40%;
 }
-.flower_line_leaf--5 {
+.flower__line__leaf--5 {
   top: 0;
   transform-origin: left;
   transform: rotate(70deg) rotateY(30deg) scale(0.6);
 }
-.flower_line_leaf--6 {
+.flower__line__leaf--6 {
   top: -2%;
   left: -450%;
   transform-origin: right;
@@ -423,7 +423,7 @@ body {
   height: 25vmin;
   background-image: linear-gradient(to top, transparent, var(--c));
 }
-.flower_grass_leaf {
+.flower__grass__leaf {
   --size: 10vmin;
   position: absolute;
   width: calc(var(--size) * 2.1);
@@ -438,7 +438,7 @@ body {
   );
   z-index: 100;
 }
-.flower_grass_leaf--1 {
+.flower__grass__leaf--1 {
   top: -6%;
   left: 30%;
   --size: 6vmin;
@@ -451,7 +451,7 @@ body {
     transform: rotate(-20deg) scale(0);
   }
 }
-.flower_grass_leaf--2 {
+.flower__grass__leaf--2 {
   top: -5%;
   left: -110%;
   --size: 6vmin;
@@ -464,7 +464,7 @@ body {
     transform: rotate(10deg) scale(0);
   }
 }
-.flower_grass_leaf--3 {
+.flower__grass__leaf--3 {
   top: 5%;
   left: 60%;
   --size: 8vmin;
@@ -477,7 +477,7 @@ body {
     transform: rotate(-18deg) rotateX(-20deg) scale(0);
   }
 }
-.flower_grass_leaf--4 {
+.flower__grass__leaf--4 {
   top: 6%;
   left: -135%;
   --size: 8vmin;
@@ -490,7 +490,7 @@ body {
     transform: rotate(2deg) scale(0);
   }
 }
-.flower_grass_leaf--5 {
+.flower__grass__leaf--5 {
   top: 20%;
   left: 60%;
   --size: 10vmin;
@@ -503,7 +503,7 @@ body {
     transform: rotate(-24deg) rotateX(-20deg) scale(0);
   }
 }
-.flower_grass_leaf--6 {
+.flower__grass__leaf--6 {
   top: 22%;
   left: -180%;
   --size: 10vmin;
@@ -516,7 +516,7 @@ body {
     transform: rotate(10deg) scale(0);
   }
 }
-.flower_grass_leaf--7 {
+.flower__grass__leaf--7 {
   top: 39%;
   left: 70%;
   --size: 10vmin;
@@ -529,7 +529,7 @@ body {
     transform: rotate(-10deg) scale(0);
   }
 }
-.flower_grass_leaf--8 {
+.flower__grass__leaf--8 {
   top: 40%;
   left: -215%;
   --size: 11vmin;
@@ -542,7 +542,7 @@ body {
     transform: rotate(10deg) scale(0);
   }
 }
-.flower_grass_overlay {
+.flower__grass__overlay {
   position: absolute;
   top: -10%;
   right: 0%;
@@ -575,7 +575,7 @@ body {
     transform: rotate(-32deg) rotateY(-20deg);
   }
 }
-.flower_g-long_top {
+.flower__g-long__top {
   top: calc(var(--h) * -1);
   width: calc(var(--w) + 1vmin);
   height: var(--h);
@@ -583,7 +583,7 @@ body {
   border-right: 0.7vmin solid var(--c);
   transform: translate(-0.7vmin, 1vmin);
 }
-.flower_g-long_bottom {
+.flower__g-long__bottom {
   width: var(--w);
   height: 50vmin;
   transform-origin: bottom center;
@@ -659,7 +659,7 @@ body {
     transform: rotate(-35deg) rotateY(40deg) scale(1.04);
   }
 }
-.flower_g-front_line {
+.flower__g-front__line {
   width: 0.3vmin;
   height: 20vmin;
   background-image: linear-gradient(
@@ -670,82 +670,82 @@ body {
   );
   position: relative;
 }
-.flower_g-front_leaf-wrapper {
+.flower__g-front__leaf-wrapper {
   position: absolute;
   top: 0;
   left: 0;
   transform-origin: bottom left;
   transform: rotate(10deg);
 }
-.flower_g-front_leaf-wrapper:nth-child(even) {
+.flower__g-front__leaf-wrapper:nth-child(even) {
   left: 0vmin;
   transform: rotateY(-180deg) rotate(5deg);
-  animation: flower_g-front_leaf-left-ans 1s ease-in backwards;
+  animation: flower__g-front__leaf-left-ans 1s ease-in backwards;
 }
-.flower_g-front_leaf-wrapper:nth-child(odd) {
-  animation: flower_g-front_leaf-ans 1s ease-in backwards;
+.flower__g-front__leaf-wrapper:nth-child(odd) {
+  animation: flower__g-front__leaf-ans 1s ease-in backwards;
 }
-.flower_g-front_leaf-wrapper--1 {
+.flower__g-front__leaf-wrapper--1 {
   top: -8vmin;
   transform: scale(0.7);
-  animation: flower_g-front_leaf-ans 1s 5.5s ease-in backwards !important;
+  animation: flower__g-front__leaf-ans 1s 5.5s ease-in backwards !important;
 }
-.flower_g-front_leaf-wrapper--2 {
+.flower__g-front__leaf-wrapper--2 {
   top: -8vmin;
   transform: rotateY(-180deg) scale(0.7) !important;
-  animation: flower_g-front_leaf-left-ans-2 1s 4.6s ease-in backwards !important;
+  animation: flower__g-front__leaf-left-ans-2 1s 4.6s ease-in backwards !important;
 }
-.flower_g-front_leaf-wrapper--3 {
+.flower__g-front__leaf-wrapper--3 {
   top: -3vmin;
-  animation: flower_g-front_leaf-ans 1s 4.6s ease-in backwards;
+  animation: flower__g-front__leaf-ans 1s 4.6s ease-in backwards;
 }
-.flower_g-front_leaf-wrapper--4 {
+.flower__g-front__leaf-wrapper--4 {
   top: -3vmin;
   transform: rotateY(-180deg) scale(0.9) !important;
-  animation: flower_g-front_leaf-left-ans-2 1s 4.6s ease-in backwards !important;
+  animation: flower__g-front__leaf-left-ans-2 1s 4.6s ease-in backwards !important;
 }
-@keyframes flower_g-front_leaf-left-ans-2 {
+@keyframes flower__g-front__leaf-left-ans-2 {
   0% {
     transform: rotateY(-180deg) scale(0);
   }
 }
-.flower_g-front_leaf-wrapper--5,
-.flower_g-front_leaf-wrapper--6 {
+.flower__g-front__leaf-wrapper--5,
+.flower__g-front__leaf-wrapper--6 {
   top: 2vmin;
 }
-.flower_g-front_leaf-wrapper--7,
-.flower_g-front_leaf-wrapper--8 {
+.flower__g-front__leaf-wrapper--7,
+.flower__g-front__leaf-wrapper--8 {
   top: 6.5vmin;
 }
-.flower_g-front_leaf-wrapper--2 {
+.flower__g-front__leaf-wrapper--2 {
   animation-delay: 5.2s !important;
 }
-.flower_g-front_leaf-wrapper--3 {
+.flower__g-front__leaf-wrapper--3 {
   animation-delay: 4.9s !important;
 }
-.flower_g-front_leaf-wrapper--5 {
+.flower__g-front__leaf-wrapper--5 {
   animation-delay: 4.3s !important;
 }
-.flower_g-front_leaf-wrapper--6 {
+.flower__g-front__leaf-wrapper--6 {
   animation-delay: 4.1s !important;
 }
-.flower_g-front_leaf-wrapper--7 {
+.flower__g-front__leaf-wrapper--7 {
   animation-delay: 3.8s !important;
 }
-.flower_g-front_leaf-wrapper--8 {
+.flower__g-front__leaf-wrapper--8 {
   animation-delay: 3.5s !important;
 }
-@keyframes flower_g-front_leaf-ans {
+@keyframes flower__g-front__leaf-ans {
   0% {
     transform: rotate(10deg) scale(0);
   }
 }
-@keyframes flower_g-front_leaf-left-ans {
+@keyframes flower__g-front__leaf-left-ans {
   0% {
     transform: rotateY(-180deg) rotate(5deg) scale(0);
   }
 }
-.flower_g-front_leaf {
+.flower__g-front__leaf {
   width: 10vmin;
   height: 10vmin;
   border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
@@ -795,7 +795,7 @@ body {
   position: relative;
   z-index: 1;
 }
-.flower_g-fr_leaf {
+.flower__g-fr__leaf {
   position: absolute;
   top: 0;
   left: 0;
@@ -816,7 +816,7 @@ body {
     transparent
   );
 }
-.flower_g-fr_leaf--1 {
+.flower__g-fr__leaf--1 {
   left: 20vmin;
   transform: rotate(45deg);
   animation: flower__g-fr-leaft-ans-1 0.5s 5.2s linear backwards;
@@ -827,25 +827,25 @@ body {
     transform: rotate(45deg) scale(0);
   }
 }
-.flower_g-fr_leaf--2 {
+.flower__g-fr__leaf--2 {
   left: 12vmin;
   top: -7vmin;
   transform: rotate(25deg) rotateY(-180deg);
   animation: flower__g-fr-leaft-ans-6 0.5s 5s linear backwards;
 }
-.flower_g-fr_leaf--3 {
+.flower__g-fr__leaf--3 {
   left: 15vmin;
   top: 6vmin;
   transform: rotate(55deg);
   animation: flower__g-fr-leaft-ans-5 0.5s 4.8s linear backwards;
 }
-.flower_g-fr_leaf--4 {
+.flower__g-fr__leaf--4 {
   left: 6vmin;
   top: -2vmin;
   transform: rotate(25deg) rotateY(-180deg);
   animation: flower__g-fr-leaft-ans-6 0.5s 4.6s linear backwards;
 }
-.flower_g-fr_leaf--5 {
+.flower__g-fr__leaf--5 {
   left: 10vmin;
   top: 14vmin;
   transform: rotate(55deg);
@@ -857,7 +857,7 @@ body {
     transform: rotate(55deg) scale(0);
   }
 }
-.flower_g-fr_leaf--6 {
+.flower__g-fr__leaf--6 {
   left: 0vmin;
   top: 6vmin;
   transform: rotate(25deg) rotateY(-180deg);
@@ -869,7 +869,7 @@ body {
     transform: rotate(25deg) rotateY(-180deg) scale(0);
   }
 }
-.flower_g-fr_leaf--7 {
+.flower__g-fr__leaf--7 {
   left: 5vmin;
   top: 22vmin;
   transform: rotate(45deg);
@@ -881,7 +881,7 @@ body {
     transform: rotate(45deg) scale(0);
   }
 }
-.flower_g-fr_leaf--8 {
+.flower__g-fr__leaf--8 {
   left: -4vmin;
   top: 15vmin;
   transform: rotate(15deg) rotateY(-180deg);

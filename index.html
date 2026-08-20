@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Safa ✨</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Stars -->
+  <div class="night">
+      <div class="star" style="top:5%;left:10%"></div>
+      <div class="star" style="top:10%;left:35%"></div>
+      <div class="star" style="top:15%;left:60%"></div>
+      <div class="star" style="top:20%;left:85%"></div>
+      <div class="star" style="top:23%;left:5%"></div>
+      <div class="star" style="top:25%;left:45%"></div>
+      <div class="star" style="top:30%;left:75%"></div>
+      <div class="star" style="top:35%;left:95%"></div>
+      <div class="star" style="top:40%;left:13%"></div>
+      <div class="star" style="top:45%;left:38%"></div>
+      <div class="star" style="top:50%;left:63%"></div>
+      <div class="star" style="top:55%;left:88%"></div>
+      <div class="star" style="top:60%;left:18%"></div>
+      <div class="star" style="top:65%;left:48%"></div>
+      <div class="star" style="top:70%;left:78%"></div>
+      <div class="star" style="top:80%;left:30%"></div>
+      <div class="star" style="top:90%;left:65%"></div>
+  </div>
+
+  <!-- Floating Hearts -->
+  <div class="hearts">
+      <span>🌺</span>
+      <span>🌷</span>
+      <span>🪻</span>
+      <span>🌼</span>
+      <span>🪷</span>
+      <span>🌸</span>
+  </div>
+
+  <!-- Birthday Text -->
+  <div class="message">
+
+      <h1>🎂 Happy Birthday Safa! 🎂</h1>
+
+      <h2>
+          Wishing you endless happiness,
+          beautiful memories,
+          and lots of smiles. ✨
+      </h2>
+
+      <p>
+          A little surprise is waiting for you...
+          <br><br>
+          Click the gift box below 🎁
+      </p>
+
+  </div>
+
+  <!-- Gift -->
+  <div class="gift-box" id="giftBox" onclick="openGift()">
+
+      <div class="box">
+
+          <div class="lid"></div>
+
+          <div class="ribbon horizontal"></div>
+
+          <div class="ribbon vertical"></div>
+
+          <div class="loop left"></div>
+
+          <div class="loop right"></div>
+
+          <div class="knot"></div>
+
+      </div>
+
+  </div>
+
+  <!-- Signature -->
+  <div class="message2">
+      Made by Mohsin
+  </div>
+
+  <!-- Confetti -->
+  <div id="confetti-container"></div>
+  <script>
+    const giftBox = document.getElementById("giftBox");
+    const confettiContainer = document.getElementById("confetti-container");
+    
+    let clicked = false;
+    
+    function openGift() {
+    
+        if (clicked) return;
+        clicked = true;
+    
+        // Disable more clicks
+        giftBox.style.pointerEvents = "none";
+    
+        // Open lid animation
+        giftBox.classList.add("open");
+    
+        // Create celebration
+        createConfetti();
+    
+        // Glow effect
+        giftBox.animate(
+            [
+                {
+                    filter: "drop-shadow(0 0 10px gold)"
+                },
+                {
+                    filter: "drop-shadow(0 0 45px gold)"
+                },
+                {
+                    filter: "drop-shadow(0 0 20px gold)"
+                }
+            ],
+            {
+                duration: 1800
+            }
+        );
+    
+        // Open second page after animation
+        setTimeout(() => {
+            window.location.href = "main1.html";
+        }, 1800);
+    
+    }
+    
+    function createConfetti() {
+    
+        const emojis = [
+            "🎉","✨","🌸","🌻",
+            "🎊","💐","⭐","🥳"
+        ];
+    
+        for (let i = 0; i < 120; i++) {
+    
+            const item = document.createElement("span");
+    
+            item.className = "confetti";
+    
+            item.innerHTML =
+                emojis[Math.floor(Math.random() * emojis.length)];
+    
+            item.style.left = Math.random() * 100 + "vw";
+    
+            item.style.fontSize =
+                (18 + Math.random() * 18) + "px";
+    
+            item.style.animationDuration =
+                (2 + Math.random() * 2) + "s";
+    
+            item.style.animationDelay =
+                (Math.random() * 0.5) + "s";
+    
+            confettiContainer.appendChild(item);
+    
+            setTimeout(() => {
+                item.remove();
+            }, 4500);
+        }
+    }
+    
+    // Random Sparkles
+    
+    setInterval(() => {
+    
+        const s = document.createElement("div");
+    
+        s.innerHTML = "✨";
+    
+        s.style.position = "fixed";
+        s.style.left = Math.random() * 100 + "vw";
+        s.style.top = Math.random() * 100 + "vh";
+        s.style.fontSize = (10 + Math.random() * 14) + "px";
+        s.style.pointerEvents = "none";
+        s.style.opacity = "0.9";
+        s.style.transition = "2s";
+        s.style.zIndex = "999";
+    
+        document.body.appendChild(s);
+    
+        setTimeout(() => {
+            s.style.transform = "translateY(-40px)";
+            s.style.opacity = "0";
+        }, 50);
+    
+        setTimeout(() => {
+            s.remove();
+        }, 2000);
+    
+    }, 350);
+    
+    </script>
+    
+    </body>
+    </html>
